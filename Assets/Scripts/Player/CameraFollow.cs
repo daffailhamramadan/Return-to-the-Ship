@@ -10,12 +10,10 @@ public class CameraFollow : MonoBehaviour
 
     private Vector3 target;
 
-    private float offset = 2f;
-
     // Update is called once per frame
     void LateUpdate()
     {
-        target = new Vector3(player.position.x, player.position.y + offset, transform.position.z);
+        target = new Vector3(player.position.x, transform.position.y, transform.position.z);
 
         transform.position = Vector3.SmoothDamp(transform.position, target, ref velocity, 0.5f);
     }

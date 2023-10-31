@@ -7,6 +7,7 @@ public class PlayerInput : MonoBehaviour
     public bool SpaceKeyDown()
     {
         return Input.GetKey(KeyCode.Space);
+
     }
 
     public float Horizontal
